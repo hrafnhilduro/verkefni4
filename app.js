@@ -30,6 +30,8 @@ function errorHandler(err, req, res, next) { // eslint-disable-line
   return res.status(500).json({ error: 'Internal server error' });
 }
 
+// Þar sem er id þufrum við að leita af þeim færslum í gagnagrunninum
+
 app.use(notFoundHandler);
 app.use(errorHandler);
 
